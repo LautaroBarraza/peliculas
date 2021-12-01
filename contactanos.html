@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1dfba8ce1c.js" crossorigin="anonymous"></script>
+    <title>Opina</title>
+</head>
+<body>
+    <header>        
+        <div class="logo">
+            <a href="index.html"><i class="fas fa-gamepad"></i></a>
+        </div>         
+        <div class="buscador"> 
+            <form action="">
+                <input class="input-buscador" type="search" placeholder="Buscar" required>    
+            </form>
+            <div class="logo-buscar">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <nav>
+            <ul class="barra-menu">
+                <li class="lista-menu"><a class="enlace-navegacion" href="topvendidos.html">Top Vendido</a></li>
+                <li class="lista-menu"><a class="enlace-navegacion" href="proximoslanzamientos.html"> proximamente</a></li>
+                <li class="lista-menu"><a class="enlace-navegacion" href="contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <div class="menu-responsive">
+            <i class="fas fa-bars"></i>
+        </div>
+</header>
+    <div class="container">
+
+        
+        <div class="seccion-centro">
+            <iframe src="https://discord.com/widget?id=663219100914417666&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            <div class="formulario">
+                <h1 id="comentario-feedback">Contacta Con Nosotros</h1>
+                <div class="form-agregar-busqueda">
+                    <form action="" id="form">
+                        <div class="datos">                       
+                        <input type="text" placeholder="Agregar Nombre" id="nombre" class="input-formulario">      
+                        <input type="text" placeholder="Agregar Apellido" id="apellido" class="input-formulario">
+                        <input type="button" value="Agregar" id="agregar" class="boton-agregar">
+                        <input type="text" placeholder="Filtrar por nombre" id="filtro-nombre" class="input-formulario" >
+                        <input type="text" placeholder="Filtrar por apellido" id="filtro-apellido" class="input-formulario" >
+                        </div>
+                        <div id="botones">  
+                            
+                            <input type="button" value="Buscar" id="buscar" class="boton-contactanos">
+                            <input type="button" value="Mostrar todos" id="mostrar-todos" class="boton-contactanos">
+                        </div>
+                    </form>
+                </div>
+                
+                    <div class="form-edicion">
+                        
+                        <form action="" id="formularioEdicion">
+
+                        </form>
+                    </div>
+                    
+                
+                <div class="tabla">
+                    <table id="tabla-formulario">
+                        <thead>
+                            <tr id="thead">
+                                <th>nombre</th>
+                                <th>apellido</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+        
+                        </tbody>
+                    </table>
+                </div>    
+                <div class="enviar-feedback">      
+                        <h1 id="texto-captcha" ></h1> 
+                    <div id="captcha">
+                        <form action="">
+                            <input type="text" id="escribir-captcha" placeholder="Escriba lo que se muesta arriba" value="">
+                            <input type="button" value="validar" id="boton-captcha" class="boton-contactanos">
+                            <input type="button" value="volver a generar" id="volver-a-generar" class="boton-contactanos">
+                            <h1 id="resultado-captcha" ></h1>
+                            <input type="submit" value="Enviar Datos" class="boton-contactanos">
+                        </form>
+                    </div>
+                            
+                         
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-izquierda">
+            <i class="fab fa-instagram" class="logo-social"></i>
+            <i class="fab fa-youtube" class="logo-social"></i>
+            <i class="fab fa-twitter" class="logo-social"></i>
+            <i class="fab fa-reddit" class="logo-social"></i>
+        </div>
+        <div class="footer-centro">
+            <ul class="lista_footer">
+            <li><p class="info-footer">condiciones</p></li>
+            <li><p class="info-footer">pago</p></li>
+            <li><p class="info-footer">privacidad</p></li>
+            <li><p class="info-footer"><a class="enlace-navegacion" href="contactanos.html">Contactanos</a></p></li>
+            <li><p class="info-footer"><span class="mayuscula">fqa</span></p></li>
+        </ul>
+        </div>
+        <div class="footer-derecha">
+            <img class="metodo-pago" src="images/footer/metodo_pago.png" alt="">
+        </div>
+
+    </footer>
+    
+</body>
+<script src="js/captcha.js"></script>
+<script src="js/menu_responsive.js"></script>
+<script src="js/tabla-dinamica.js"></script>
+</html>
